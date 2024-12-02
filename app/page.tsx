@@ -1,21 +1,14 @@
-import { FC, memo } from "react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
-const Home:FC = memo(() => {
+const Home = () => {
     return (
         <>
-        <main className="container mx-auto py-4">
-            <div className="text-center">
-                <h1>⚠️Under maintanance⚠️</h1>
-                <br />
-                <p><a href="https://x.com/nekihcom" className="underline text-teal-600">X</a></p>
-                <br />
-                <p><a href="https://github.com/nekihcom" className="underline text-teal-600">GitHub</a></p>
-            </div>
-            
-        </main>
+        <Header />
+        <h1>Helo, World!</h1>
+        <Footer />
         </>
     );
-});
+}
 
-Home.displayName = "Home";
 export default Home;
