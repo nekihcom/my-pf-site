@@ -10,3 +10,5 @@ export const Footer:FC = memo(() => {
         </>
     )
 });
+
+Footer.displayName = 'Footer';

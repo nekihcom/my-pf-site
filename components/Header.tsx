@@ -10,3 +10,5 @@ export const Header:FC = memo(() => {
         </>
     )
 });
+
+Header.displayName = 'Header';
