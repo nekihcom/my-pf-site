@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { FC, memo, ReactNode } from "react";
 
+import "./globals.css";
 import { siteConfig } from "../config/site";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+
 
 export const metadata: Metadata = {
     title: {
@@ -11,24 +15,27 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     icons: {
         icon: "/favicon.ico",
-    },
+    }
 };
 
-const RootLayout = ({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) => {
+type Props = {
+    children: ReactNode;
+}
+
+const RootLayout:FC<Props> = memo((props) => {
+    const {children} = props;
+
     return (
         <html lang="en">
             <head />
-            <body
-                className={`antialiased`}
-            >
+            <body>
+                <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
-}
+});
 
+RootLayout.displayName = "RootLayout";
 export default RootLayout;
