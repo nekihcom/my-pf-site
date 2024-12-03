@@ -3,8 +3,8 @@ import { FC, memo, ReactNode } from "react";
 
 import "./globals.css";
 import { siteConfig } from "../config/site";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/organisms/layout/Header";
+import { Footer } from "@/components/organisms/layout/Footer";
 
 
 export const metadata: Metadata = {
