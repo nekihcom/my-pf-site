@@ -1,23 +1,54 @@
+import { GlobalContainer } from "@/components/molecules/GlobalContainer";
+import { Box, Typography } from "@mui/material";
 import { FC, memo } from "react";
 
 const Home:FC = memo(() => {
-    return (
-        <>
-        <main className="flex flex-1 flex-col justify-center">
-            <div className="mx-auto max-w-7xl space-y-32 px-8 py-16">
-                <div className="mx-auto flex justify-center gap-16 max-lg:flex-col max-lg:items-center">
-                    <p>aaaa</p>
-                    <p>bbb</p>
-                </div>
-                <div className="grid grid-cols-6 gap-4 max-lg:grid-cols-3 max-sm:grid-cols-2 max-xs:grid-cols-1">
-                    <p>ccc</p>
-                    <p>ddd</p>
-                    <p>eee</p>
-                </div>
-            </div>
-        </main>
-        </>
-    );
+  return (
+    <>
+      <Box component={"main"}>
+        <GlobalContainer>
+          <Box component={"section"} id="mv" sx={{ py:16, px:{sm:8, md:0} }}>
+            
+            <br />
+            <Typography>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde
+              fugit veniam eius, perspiciatis sunt? Corporis qui ducimus quibusdam,
+              aliquam dolore excepturi quae. Distinctio enim at eligendi perferendis in
+              cum quibusdam sed quae, accusantium et aperiam? Quod itaque exercitationem,
+              at ab sequi qui modi delectus quia corrupti alias distinctio nostrum.
+              Minima ex dolor modi inventore sapiente necessitatibus aliquam fuga et. Sed
+              numquam quibusdam at officia sapiente porro maxime corrupti perspiciatis
+              asperiores, exercitationem eius nostrum consequuntur iure aliquam itaque,
+              assumenda et! Quibusdam temporibus beatae doloremque voluptatum doloribus
+              soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae
+              ab officiis illo voluptates recusandae. Vel dolor nobis eius, ratione atque
+              soluta, aliquam fugit qui iste architecto perspiciatis. Nobis, voluptatem!
+              Cumque, eligendi unde aliquid minus quis sit debitis obcaecati error,
+              delectus quo eius exercitationem tempore. Delectus sapiente, provident
+              corporis dolorum quibusdam aut beatae repellendus est labore quisquam
+              praesentium repudiandae non vel laboriosam quo ab perferendis velit ipsa
+              deleniti modi! Ipsam, illo quod. Nesciunt commodi nihil corrupti cum non
+              fugiat praesentium doloremque architecto laborum aliquid. Quae, maxime
+              recusandae? Eveniet dolore molestiae dicta blanditiis est expedita eius
+              debitis cupiditate porro sed aspernatur quidem, repellat nihil quasi
+              praesentium quia eos, quibusdam provident. Incidunt tempore vel placeat
+              voluptate iure labore, repellendus beatae quia unde est aliquid dolor
+              molestias libero. Reiciendis similique exercitationem consequatur, nobis
+              placeat illo laudantium! Enim perferendis nulla soluta magni error,
+              provident repellat similique cupiditate ipsam, et tempore cumque quod! Qui,
+              iure suscipit tempora unde rerum autem saepe nisi vel cupiditate iusto.
+              Illum, corrupti? Fugiat quidem accusantium nulla. Aliquid inventore commodi
+              reprehenderit rerum reiciendis! Quidem alias repudiandae eaque eveniet
+              cumque nihil aliquam in expedita, impedit quas ipsum nesciunt ipsa ullam
+              consequuntur dignissimos numquam at nisi porro a, quaerat rem repellendus.
+              Voluptates perspiciatis, in pariatur impedit, nam facilis libero dolorem
+              dolores sunt inventore perferendis, aut sapiente modi nesciunt.
+            </Typography>
+          </Box>
+        </GlobalContainer>
+      </Box>
+    </>
+  );
 });
 
 Home.displayName = "Home";
