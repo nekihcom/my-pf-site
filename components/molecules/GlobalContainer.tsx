@@ -11,3 +11,4 @@ export const GlobalContainer:FC<Props> = memo((props) => {
     <Container maxWidth="md">{ children }</Container>
   )
 });
+GlobalContainer.displayName = 'GlobalContainer';

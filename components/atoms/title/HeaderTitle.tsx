@@ -18,3 +18,4 @@ export const HeaderTitle:FC<Props> = memo((props) => {
     </Typography>
   )
 });
+HeaderTitle.displayName = 'HeaderTitle';
