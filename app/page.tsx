@@ -1,5 +1,5 @@
 import { GlobalContainer } from "@/components/molecules/GlobalContainer";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { FC, memo } from "react";
 
 const Home:FC = memo(() => {
