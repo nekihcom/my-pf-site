@@ -38,8 +38,6 @@ const DrawerAppBar = (props: Props) => {
   // レスポンシブドロワーメニュー
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>aaaaa</Typography>
-      <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
