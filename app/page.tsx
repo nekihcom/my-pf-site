@@ -1,6 +1,10 @@
-import { GlobalContainer } from "@/components/molecules/GlobalContainer";
-import { Box } from "@mui/material";
 import { FC, memo } from "react";
+import { Box } from "@mui/material";
+import XIcon from '@mui/icons-material/X';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+import { GlobalContainer } from "@/components/molecules/GlobalContainer";
+import QiitaIcon from "@/components/molecules/Icon/QiitaIcon";
 
 const Home:FC = memo(() => {
   
@@ -21,9 +25,10 @@ const Home:FC = memo(() => {
               src="https://2.gravatar.com/avatar/d9027e1ce316d94ea1025c142202d6e9345d2fae69334d004b9074cf52f27fb5"
             /><br/>
             <br />
-            https://x.com/nekihcom<br />
-            https://github.com/nekihcom<br />
-            https://qiita.com/<br />
+            <XIcon /> https://x.com/nekihcom<br />
+            <GitHubIcon /> https://github.com/nekihcom<br />
+            <QiitaIcon /> https://qiita.com/<br />
+            
             <br />
           </Box>
         </GlobalContainer>
