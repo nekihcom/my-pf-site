@@ -18,6 +18,7 @@ const TopProfile:FC = memo(() => {
             alt="Mochiken's Profile Image" 
             src="/icon/profile-icon.png" 
             width={"70%"}
+            maxWidth={"200px"}
           />
         </Box>
         <Typography variant={"h2"} align={'center'} sx={{fontSize:'28px', fontWeight:700, mb:5}}>Mochiken</Typography>
