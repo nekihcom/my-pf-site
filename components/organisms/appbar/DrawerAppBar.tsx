@@ -12,7 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { HeaderTitle } from '@/components/atoms/title/HeaderTitle';
-import { GlobalContainer } from '@/components/molecules/GlobalContainer';
+import { GlobalContainer } from '@/components/molecules/layout/GlobalContainer';
 
 interface Props {
   /**

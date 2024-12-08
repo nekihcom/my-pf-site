@@ -1,4 +1,4 @@
-import { GlobalContainer } from "@/components/molecules/GlobalContainer";
+import { GlobalContainer } from "@/components/molecules/layout/GlobalContainer";
 import { Box } from "@mui/material";
 import { FC, memo } from "react";
 

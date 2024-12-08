@@ -12,7 +12,7 @@ export const HeaderTitle:FC<Props> = memo((props) => {
     <Typography
       variant="h1"
       sx={{
-        fontSize: "20px",
+        fontSize: "24px",
     }}>
       {text}
     </Typography>

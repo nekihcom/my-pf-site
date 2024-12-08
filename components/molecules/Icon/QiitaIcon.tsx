@@ -1,11 +1,11 @@
 import { FC, memo } from "react";
 
-import Icon from "@/components/atoms/icon/Icon";
+import Image from "@/components/atoms/image/Image";
 
 const QiitaIcon:FC = memo(() => {
   return (
     <>
-      <Icon src={"/icon/qiita-icon.png"} />
+      <Image alt={"Qiita"} src={"/icon/qiita-icon.png"} width={36} />
     </>
   )
 });
