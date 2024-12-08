@@ -56,4 +56,5 @@ const TopProfile:FC = memo(() => {
   )
 });
 
-export default TopProfile
+export default TopProfile;
+TopProfile.displayName = 'TopProfile';

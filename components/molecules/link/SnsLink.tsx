@@ -29,3 +29,4 @@ const SnsLink:FC<Props> = memo((props) => {
 });
 
 export default SnsLink;
+SnsLink.displayName = 'SnsLink';

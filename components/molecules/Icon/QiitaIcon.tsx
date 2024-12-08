@@ -10,3 +10,4 @@ const QiitaIcon:FC = memo(() => {
   )
 });
 export default QiitaIcon;
+QiitaIcon.displayName = 'QiitaIcon';

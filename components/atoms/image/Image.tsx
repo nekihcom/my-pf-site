@@ -17,3 +17,4 @@ const Image:FC<Props> = memo((props) => {
   )
 });
 export default Image;
+Image.displayName = 'Image';
