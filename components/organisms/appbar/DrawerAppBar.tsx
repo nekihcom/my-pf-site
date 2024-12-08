@@ -15,6 +15,7 @@ import { grey } from '@mui/material/colors';
 
 import { HeaderTitle } from '@/components/atoms/title/HeaderTitle';
 import { GlobalContainer } from '@/components/molecules/layout/GlobalContainer';
+import { Button } from '@mui/material';
 
 interface Props {
   /**
@@ -25,7 +26,8 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+// const navItems = ['Home', 'About', 'Contact'];
+const navItems = [''];
 
 const DrawerAppBar = (props: Props) => {
   const { window } = props;
@@ -72,14 +74,14 @@ const DrawerAppBar = (props: Props) => {
                 onClick={handleDrawerToggle}
                 sx={{ 
                   mr: 2,
-                  color:grey[900]
-                  // display: { sm: 'none' } 
+                  color:grey[900],
+                  display: { sm: 'none' } 
               }}>
                 <MenuIcon />
               </IconButton>
 
               {/* sm以上で表示するヘッダーメニュー */}
-              {/* <Box 
+              <Box 
                 sx={{ 
                     display: { xs: 'none', sm: 'flex' } ,
                     alignItems: "center"
@@ -87,13 +89,13 @@ const DrawerAppBar = (props: Props) => {
                 {navItems.map((item) => (
                   <Button key={item} 
                     sx={{
-                      color: '#fff',
+                      color: grey[900],
                       marginRight: "2rem"
                   }}>
                     {item}
                   </Button>
                 ))}
-              </Box> */}
+              </Box>
             </Box>
           </GlobalContainer>
         </Toolbar>
