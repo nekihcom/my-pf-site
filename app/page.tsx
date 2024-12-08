@@ -8,7 +8,7 @@ const Home:FC = memo(() => {
   
   return (
     <>
-      <Box component={"main"} sx={{ py:10, px:{sm:8, md:0} }}>
+      <Box component={"main"} sx={{ pt:20, pb:8, px:{sm:8, md:0} }}>
         <GlobalContainer>
           <TopProfile />
         </GlobalContainer>

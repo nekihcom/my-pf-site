@@ -11,6 +11,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { grey } from '@mui/material/colors';
+
 import { HeaderTitle } from '@/components/atoms/title/HeaderTitle';
 import { GlobalContainer } from '@/components/molecules/layout/GlobalContainer';
 
@@ -52,7 +54,7 @@ const DrawerAppBar = (props: Props) => {
 
   return (
     <>
-      <AppBar component="nav" sx={{ maxWidth:'lg', width:'95vw', top:'10px', left:'50%', transform:'translateX(-50%)', borderRadius:'20px' }}>
+      <AppBar component="nav" sx={{ maxWidth:'lg', width:'95vw', top:'10px', left:'50%', transform:'translateX(-50%)', borderRadius:'20px', backgroundColor:'#fff' }}>
         <Toolbar>
           <GlobalContainer>
             <Box sx={{ display:'flex', justifyContent:'space-between', width:'100%', alignItems:'center' }}>
@@ -70,6 +72,7 @@ const DrawerAppBar = (props: Props) => {
                 onClick={handleDrawerToggle}
                 sx={{ 
                   mr: 2,
+                  color:grey[900]
                   // display: { sm: 'none' } 
               }}>
                 <MenuIcon />
