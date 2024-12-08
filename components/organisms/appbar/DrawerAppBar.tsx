@@ -11,8 +11,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { grey } from '@mui/material/colors';
+
 import { HeaderTitle } from '@/components/atoms/title/HeaderTitle';
-import { GlobalContainer } from '@/components/molecules/GlobalContainer';
+import { GlobalContainer } from '@/components/molecules/layout/GlobalContainer';
+import { Button } from '@mui/material';
 
 interface Props {
   /**
@@ -23,7 +26,8 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+// const navItems = ['Home', 'About', 'Contact'];
+const navItems = [''];
 
 const DrawerAppBar = (props: Props) => {
   const { window } = props;
@@ -52,7 +56,7 @@ const DrawerAppBar = (props: Props) => {
 
   return (
     <>
-      <AppBar component="nav" sx={{ maxWidth:'lg', width:'95vw', top:'10px', left:'50%', transform:'translateX(-50%)', borderRadius:'20px' }}>
+      <AppBar component="nav" sx={{ maxWidth:'lg', width:'95vw', top:'10px', left:'50%', transform:'translateX(-50%)', borderRadius:'20px', backgroundColor:'#fff' }}>
         <Toolbar>
           <GlobalContainer>
             <Box sx={{ display:'flex', justifyContent:'space-between', width:'100%', alignItems:'center' }}>
@@ -70,13 +74,14 @@ const DrawerAppBar = (props: Props) => {
                 onClick={handleDrawerToggle}
                 sx={{ 
                   mr: 2,
-                  // display: { sm: 'none' } 
+                  color:grey[900],
+                  display: { sm: 'none' } 
               }}>
                 <MenuIcon />
               </IconButton>
 
               {/* sm以上で表示するヘッダーメニュー */}
-              {/* <Box 
+              <Box 
                 sx={{ 
                     display: { xs: 'none', sm: 'flex' } ,
                     alignItems: "center"
@@ -84,13 +89,13 @@ const DrawerAppBar = (props: Props) => {
                 {navItems.map((item) => (
                   <Button key={item} 
                     sx={{
-                      color: '#fff',
+                      color: grey[900],
                       marginRight: "2rem"
                   }}>
                     {item}
                   </Button>
                 ))}
-              </Box> */}
+              </Box>
             </Box>
           </GlobalContainer>
         </Toolbar>
