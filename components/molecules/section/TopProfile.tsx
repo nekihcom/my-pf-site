@@ -1,56 +1,44 @@
 import { FC, memo } from 'react';
-import { Box, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { grey, lightGreen } from '@mui/material/colors';
 
-import QiitaIcon from "@/components/molecules/Icon/QiitaIcon";
+import QiitaIcon from "@/components/molecules/icon/QiitaIcon";
 import SnsLink from '../link/SnsLink';
+import { ProfileItem } from '../profile/ProfileItem';
 
 
 const TopProfile:FC = memo(() => {
   return (
     <>
-      <Box component={"section"} id="mv">
+      <Box component={"section"} id="mv" sx={{
+        display:{xs:'block', sm:'flex'}, alignItems:{sm:'center'} }}>
         <Box sx={{display:"flex", justifyContent:"center", mb:2}}>
           <Box 
             component={"img"}
             alt="Mochiken's Profile Image" 
             src="/icon/profile-icon.png" 
-            width={"70%"}
             maxWidth={"200px"}
+            sx={{width:{xs:'70%', sm:'100%'}}}
           />
         </Box>
-        <Typography variant={"h2"} align={'center'} sx={{fontSize:'28px', fontWeight:700, mb:5}}>Mochiken</Typography>
-        <TableContainer sx={{mb:5}}>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell sx={{fontWeight:700}}>Occupation</TableCell>
-                <TableCell>Software Engineer</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell sx={{fontWeight:700}}>Birth</TableCell>
-                <TableCell>1997.2.11.</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell sx={{fontWeight:700}}>Strength</TableCell>
-                <TableCell>CMSを使ったサイト構築<br />BIツール構築</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell sx={{fontWeight:700}}>Interest Skills</TableCell>
-                <TableCell>Next.jsと英語を勉強中</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell sx={{fontWeight:700}}>Hobby</TableCell>
-                <TableCell>野球、バドミントン、筋トレ</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <SnsLink link={'https://x.com/nekihcom'} name={'X(Twitter)'} username={'@nekihcom'} icon={<XIcon style={{ fontSize:36 }} />} />
-        <SnsLink link={'https://github.com/nekihcom'} name={'GitHub'} username={'@nekihcom'} icon={<GitHubIcon style={{ fontSize:36 }} />} theme={grey[600]} />
-        <SnsLink link={'https://qiita.com/nekihcom'} name={'Qiita'} username={'@nekihcom'} icon={<QiitaIcon />} theme={lightGreen[600]} />
+        <Box sx={{mb:5, px:5, width:{sm:'40%'}}}>
+          <Box sx={{textAlign:{xs:'center', sm:'start'}, mb:2}}>
+            <Typography variant={"h2"} sx={{fontSize:'28px', fontWeight:700, display:'inline'}}>Mochiken</Typography>
+            <Typography variant={"h3"} sx={{fontSize:'20px', fontWeight:500, display:'inline'}}>(@nekihcom)</Typography>
+          </Box>
+          <ProfileItem title={"職業"} text={"ソフトウェアエンジニア"} />
+          <ProfileItem title={"生年月日"} text={"1997.2.11."} />
+          <ProfileItem title={"得意分野"} text={"CMSを使ったサイト構築\nBIツール構築"} />
+          <ProfileItem title={"最近興味のあるコト"} text={"Next.jsと英語"} />
+          <ProfileItem title={"趣味"} text={"野球、バドミントン、筋トレ"} />
+        </Box>
+        <Box sx={{width:{sm:'40%'}}}>
+          <SnsLink link={'https://x.com/nekihcom'} name={'X(Twitter)'} username={'@nekihcom'} icon={<XIcon style={{ fontSize:36 }} />} />
+          <SnsLink link={'https://github.com/nekihcom'} name={'GitHub'} username={'@nekihcom'} icon={<GitHubIcon style={{ fontSize:36 }} />} theme={grey[600]} />
+          <SnsLink link={'https://qiita.com/nekihcom'} name={'Qiita'} username={'@nekihcom'} icon={<QiitaIcon />} theme={lightGreen[600]} />          
+        </Box>
       </Box>
     </>
   )
