@@ -8,7 +8,7 @@ type Props = {
 export const GlobalContainer:FC<Props> = memo((props) => {
   const { children } = props;
   return (
-    <Container maxWidth="md">{ children }</Container>
+    <Container maxWidth="lg">{ children }</Container>
   )
 });
 GlobalContainer.displayName = 'GlobalContainer';
