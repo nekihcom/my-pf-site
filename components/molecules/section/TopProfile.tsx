@@ -4,7 +4,7 @@ import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { grey, lightGreen } from '@mui/material/colors';
 
-import QiitaIcon from "@/components/molecules/icon/QiitaIcon";
+import QiitaIcon from '../icon/QiitaIcon';
 import SnsLink from '../link/SnsLink';
 import { ProfileItem } from '../profile/ProfileItem';
 
