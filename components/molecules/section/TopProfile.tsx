@@ -1,19 +1,18 @@
 import { FC, memo } from 'react';
 import { Box, Typography } from '@mui/material';
+import { grey, lightGreen } from '@mui/material/colors';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { grey, lightGreen } from '@mui/material/colors';
 
 import QiitaIcon from '../Icon/QiitaIcon';
 import SnsLink from '../link/SnsLink';
 import { ProfileItem } from '../profile/ProfileItem';
 
-
 const TopProfile:FC = memo(() => {
   return (
     <>
-      <Box component={"section"} id="mv" sx={{
-        display:{xs:'block', sm:'flex'}, alignItems:{sm:'center'} }}>
+      <Box component={"section"} id="profile" sx={{
+        display:{xs:'block', sm:'flex'}, alignItems:{sm:'center'}, mb:5 }}>
         <Box sx={{display:"flex", justifyContent:"center", mb:2}}>
           <Box 
             component={"img"}
