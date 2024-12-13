@@ -24,8 +24,8 @@ const TopProfile:FC = memo(() => {
         </Box>
         <Box sx={{mb:{xs:5, md:0}, px:5, width:{md:'40%'}}}>
           <Box sx={{textAlign:{xs:'center', md:'start'}, mb:2}}>
-            <Typography variant={"h2"} sx={{fontSize:'28px', fontWeight:700, display:'inline'}}>Mochiken</Typography>
-            <Typography variant={"h3"} sx={{fontSize:'20px', fontWeight:500, display:'inline'}}>(@nekihcom)</Typography>
+            <Typography variant={"h2"} sx={{fontSize:'28px', fontWeight:700, display:'inline', fontFamily:'inherit'}}>Mochiken</Typography>
+            <Typography variant={"h3"} sx={{fontSize:'20px', fontWeight:500, display:'inline', fontFamily:'inherit'}}>(@nekihcom)</Typography>
           </Box>
           <ProfileItem title={"職業"} text={"ソフトウェアエンジニア"} />
           <ProfileItem title={"得意分野"} text={"CMSを使ったサイト構築\nBIツール構築"} />

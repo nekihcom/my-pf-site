@@ -16,7 +16,8 @@ export const HeaderTitle:FC<Props> = memo((props) => {
       sx={{
         fontWeight:700,
         fontSize: "24px",
-        color:grey[900]
+        color:grey[900], 
+        fontFamily:'inherit'
     }}>
       {text}
     </Typography>

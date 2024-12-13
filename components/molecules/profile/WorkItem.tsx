@@ -1,6 +1,7 @@
 'use client';
 import React, { FC, memo, useState } from "react";
 import { Box, Typography, Card, CardContent, CardMedia, Modal } from "@mui/material";
+import Text from "@/components/atoms/text/Text";
 
 
 type Props = {
@@ -39,8 +40,8 @@ export const WorkItem: FC<Props> = memo((props) => {
             height="140"
             image={ image } />
           <CardContent>
-            <Typography gutterBottom variant="h3" component="div" sx={{ fontWeight:700, fontSize:"24px"}}>{ title }</Typography>
-            <Typography variant="body2">{ description }</Typography>
+            <Typography gutterBottom variant="h3" component="div" sx={{ fontWeight:700, fontSize:"24px", fontFamily:'inherit'}}>{ title }</Typography>
+            <Text fontsize={14}>{ description }</Text>
           </CardContent>
           {/* <CardActions>
             <Button size="small" onClick={handleOpen}>Learn More</Button>

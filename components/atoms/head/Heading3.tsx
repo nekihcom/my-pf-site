@@ -10,7 +10,7 @@ const Heading3:FC<Props> = memo((props) => {
 
   return (
     <>
-      <Typography variant='h3' sx={{fontWeight: 700, fontSize: '24px'}}>{children}</Typography>
+      <Typography variant='h3' sx={{fontWeight: 700, fontSize: '24px', fontFamily:'inherit'}}>{children}</Typography>
     </>
   )
 });
