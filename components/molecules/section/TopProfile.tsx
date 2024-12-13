@@ -12,7 +12,7 @@ const TopProfile:FC = memo(() => {
   return (
     <>
       <Box component={"section"} id="profile" sx={{
-        display:{xs:'block', md:'flex'}, alignItems:{sm:'center'}, mb:10 }}>
+        display:{xs:'block', md:'flex'}, alignItems:{sm:'center'}, mb:15 }}>
         <Box sx={{display:"flex", justifyContent:"center", mb:2 }}>
           <Box 
             component={"img"}
