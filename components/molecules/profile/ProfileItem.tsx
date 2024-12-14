@@ -21,8 +21,8 @@ export const ProfileItem:FC<Props> = memo((props) => {
 
   return (
     <Box sx={{mb:1}}>
-      <Typography sx={{fontWeight:700, color:grey[800]}}>{ title }</Typography>
-      <Typography>{ replacedTexts }</Typography>
+      <Typography sx={{fontWeight:700, color:grey[800], fontFamily:'inherit'}}>{ title }</Typography>
+      <Typography sx={{fontFamily:'inherit'}}>{ replacedTexts }</Typography>
     </Box>
   )
 });

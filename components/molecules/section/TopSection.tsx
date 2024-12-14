@@ -13,7 +13,7 @@ const TopSection:FC<Props> = memo((props) => {
     <>
       <Box component={"section"} id={ id } sx={{ mb:15 }}>
         <Box sx={{ mb:2 }}>
-          <Typography variant={"h2"} sx={{ textAlign:"center", fontSize:'28px', fontWeight:700}}>{ name }</Typography>
+          <Typography variant={"h2"} sx={{ textAlign:"center", fontSize:'28px', fontWeight:700, fontFamily:'inherit'}}>{ name }</Typography>
         </Box>
         <Box sx={{ width:'100%', margin:'0 auto' }}>
           { children }

@@ -16,8 +16,8 @@ const SnsLink:FC<Props> = memo((props) => {
       <Box component={"a"} href={link} target={"_blank"} rel="noopener" sx={{backgroundColor:theme, color:'white', display:'block', py:1.5, px:3, borderRadius:5, mb:2 }}>
         <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
           <Box>
-            <Typography sx={{fontSize:"0.75em"}}>{ name }</Typography>
-            <Typography>{ username }</Typography>
+            <Typography sx={{fontSize:"0.75em", fontFamily:'inherit'}}>{ name }</Typography>
+            <Typography sx={{fontFamily:'inherit'}}>{ username }</Typography>
           </Box>
           <Box>
             {icon}
