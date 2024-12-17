@@ -12,10 +12,10 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { grey } from '@mui/material/colors';
+import { Button } from '@mui/material';
 
 import { HeaderTitle } from '@/components/atoms/title/HeaderTitle';
 import { GlobalContainer } from '@/components/molecules/layout/GlobalContainer';
-import { Button } from '@mui/material';
 
 interface Props {
   /**
@@ -26,8 +26,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-// const navItems = ['Home', 'About', 'Contact'];
-const navItems = [''];
+const navItems = ['works', 'skills', 'career', 'contact'];
 
 const DrawerAppBar = (props: Props) => {
   const { window } = props;
@@ -43,7 +42,14 @@ const DrawerAppBar = (props: Props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton 
+              href={'#'+item}
+              sx={{
+                textAlign: 'center',
+                fontSize:16, 
+                fontFamily:'inherit'
+              }}
+            >
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -76,7 +82,8 @@ const DrawerAppBar = (props: Props) => {
                   mr: 2,
                   color:grey[900],
                   display: { sm: 'none' } 
-              }}>
+                }}
+              >
                 <MenuIcon />
               </IconButton>
 
@@ -87,11 +94,15 @@ const DrawerAppBar = (props: Props) => {
                     alignItems: "center"
               }}>
                 {navItems.map((item) => (
-                  <Button key={item} 
+                  <Button key={item}
+                    href={'#'+item}
                     sx={{
                       color: grey[900],
-                      marginRight: "2rem"
-                  }}>
+                      marginRight: "2rem",
+                      fontSize:16, 
+                      fontFamily:'inherit'
+                    }}
+                  >
                     {item}
                   </Button>
                 ))}

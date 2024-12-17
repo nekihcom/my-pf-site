@@ -16,7 +16,7 @@ const Home:FC = memo(() => {
       <Box component={"main"} sx={{ pt:{xs:12, md:20}, pb:8, px:{sm:8, md:0} }}>
         <GlobalContainer>
           <TopProfile />
-          <TopSection id={"works"} name={"Work"}>
+          <TopSection id={"works"} name={"Works"}>
             <Works />
           </TopSection>
           <TopSection id={"skills"} name={"Skills"}>
