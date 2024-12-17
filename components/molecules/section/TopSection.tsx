@@ -11,7 +11,7 @@ const TopSection:FC<Props> = memo((props) => {
   const { id, name, children } = props;
   return (
     <>
-      <Box component={"section"} id={ id } sx={{ mb:15 }}>
+      <Box component={"section"} id={ id } sx={{ pt:12, mb:15 }}>
         <Box sx={{ mb:2 }}>
           <Typography variant={"h2"} sx={{ textAlign:"center", fontSize:'28px', fontWeight:700, fontFamily:'inherit'}}>{ name }</Typography>
         </Box>
