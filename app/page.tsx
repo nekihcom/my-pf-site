@@ -7,6 +7,7 @@ import TopSection from "@/components/molecules/section/TopSection";
 import Works from "@/components/molecules/section/Works";
 import Skills from "@/components/molecules/section/Skills";
 import Career from "@/components/molecules/section/Career";
+import Contact from "@/components/molecules/section/Contact";
 
 const Home:FC = memo(() => {
   
@@ -23,6 +24,9 @@ const Home:FC = memo(() => {
           </TopSection>
           <TopSection id={"career"} name={"Career"}>
             <Career />
+          </TopSection>
+          <TopSection id={"contact"} name={"Contact"}>
+            <Contact />
           </TopSection>
         </GlobalContainer>
       </Box>
